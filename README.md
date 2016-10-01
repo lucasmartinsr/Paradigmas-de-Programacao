@@ -1,3 +1,3 @@
-# Paradigmas-de-Programacao
+# Paradigmas de Programaçâo
 Repositório para a disciplina de Paradigmas de Programação.<br>
 Integrantes: José Ricardo, Lucas Martins, Sávio Cordeiro e Wictor Junqueira
