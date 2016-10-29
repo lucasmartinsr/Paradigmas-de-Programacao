@@ -1,0 +1,24 @@
+gosta(jake, chocolate).
+gosta(jake, damasco).
+gosta(darcie, anis).
+gosta(darcie, damasco).
+
+ola
+	:- read(X), 
+    write('Olá!'), 
+    write(X).
+
+append([], Lista, Lista).
+append([Cabeca|Lista1],Lista2,[Cabeca|Lista3 ]) 
+	:- append(Lista1, Lista2, Lista3).
+
+del(X,[X|R], R).
+del(X,[H|R1],[H|R2]) 
+	:- del(X,R1,R2).
+
+fatorial(0,1).
+fatorial(N,F)
+	:- 	N > 0,
+    	N1 is N - 1,
+    	fatorial(N1, F1),
+    	F is N*F1.
