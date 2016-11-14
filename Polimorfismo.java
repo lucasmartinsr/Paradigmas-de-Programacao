@@ -88,8 +88,8 @@ public class Gerente extends Funcionario {
 
 public class Polimorfismo {
 	public static void main(String[] args) {
-		Pessoa p = new Pessoa("José Ricardo", "70213018128", new SimpleDateFormat("yyyy-MM-dd").parse("1996-7-30"));
+		Pessoa p = new Pessoa("JosÃ© Ricardo", "70213018128", new SimpleDateFormat("yyyy-MM-dd").parse("1996-7-30"));
 		Funcionario g = new Gerente(p, 5000.0);
-		System.out.println(g.getSalario());
+		System.out.println(g.getBonus());
 	}
 }
