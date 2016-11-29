@@ -1,0 +1,5 @@
+Prolog Lista 8 - Exercício 3
+
+a) aluno_professor(X,Z):-aluno(X,Y),professor(Z,Y). 
+
+b) pessoa(Y,X):- frequenta(Y,X);funcionario(Y,X).
