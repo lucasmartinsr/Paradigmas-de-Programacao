@@ -1,0 +1,14 @@
+Prolog - Exercício 1 Lista 8
+
+eh_um(marcelo,passaro). 
+eh_um(silvio,peixe).
+eh_um(ana,minhoca).
+eh_um(chuck_norris,gato).
+gosta(passsaro,minhoca).
+gosta(gato,peixe).
+gosta(gato,passaro).
+gosta(gato,lucas).
+comida(peixe).
+comida(passaro).
+amigo(X,Y):- gosta(X,Y).
+come(X,Y):- eh_um(X,Z),gosta(Z,Y),comida(Y). 
