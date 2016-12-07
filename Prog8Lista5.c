@@ -11,6 +11,7 @@ int main(){
 	printf("\nsoma1 = %d\n", soma1);
 	printf("\nsoma2 = %d\n", soma2);
 	
+	
 	//resultados:
 	//soma1 = 46
 	//
