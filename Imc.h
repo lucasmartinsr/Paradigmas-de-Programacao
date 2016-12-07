@@ -1,3 +1,5 @@
+Exercício 6 - Lista 9
+
 #ifndef IMC_H
 #define IMC_H
 
