@@ -1,0 +1,38 @@
+// codigo em c++
+#include <iostream>
+using namespace std;
+
+int fun(int *k){
+	*k += 4;
+	return 3 * (*k) - 1;
+}
+int main(){
+	int i = 10, j = 10, soma1, soma2;
+	soma1 = (i / 2) + fun(&i);
+	soma2 = fun(&j) + (j / 2);
+	cout<<"\nsoma1 = "<< soma1 ;
+	cout<<"\nsoma2 = "<< soma2 ;
+	
+	//resultados:
+	//soma1 = 46
+	//soma2 = 48
+}
+
+// codigo em java
+public class main {
+	public static int fun(int k){
+		k += 4;
+		return 3 * (k) - 1;
+	}
+	public static void main(String[] args) {
+		int i = 10, j = 10, soma1, soma2;
+		soma1 = (i / 2) + fun(i);
+		soma2 = fun(j) + (j / 2);
+		System.out.println("\nsoma1 = "+ soma1) ;
+		System.out.println("\nsoma1 = "+ soma2) ;
+			
+		//resultados:
+		//soma1 = 46
+		//soma2 = 46
+	}
+}
