@@ -27,5 +27,5 @@ int main(){
 	
 	//resultados:
 	//valor do inteiro = 109641728
-    //valor do ponto flutuante = 1.21645e+017
+    	//valor do ponto flutuante = 1.21645e+017
 }
