@@ -1,0 +1,37 @@
+// codigo em C
+#include <stdio.h>
+int main(){
+	int k , j, i;
+	j = 14;
+	k = ( j + 13 ) / 27;
+	while (k < 10){
+		k = k + 1;
+		i = 3 * k - 1;
+	}
+	printf("i = %d k = %d", i, k);
+	
+}
+
+//codigo em python
+j = 14
+k = (j + 13)/27
+
+while k < 10:
+    k += 1
+    i = 3 * k - 1
+else:
+    print('valor de i')
+    print(i)
+    print('valor de k')
+    print(k)
+
+//codigo em Ruby
+$j = 14
+$k = ($j + 13)/27
+
+while $k < 10  do
+   $k = $k + 1
+   $i = 3 * $k - 1
+end
+puts("valor de i = #$i" )
+puts("valor de k = #$k" )
