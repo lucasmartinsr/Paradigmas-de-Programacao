@@ -1,0 +1,80 @@
+//codigo em c++
+#include <iostream>
+using namespace std;
+
+int main(){
+	int k,j;
+	
+	scanf("%d",&k);
+	//k = 2;
+	switch (k) { 
+		case 1: 
+			j = 2 * k - 1;
+			break; 
+		case 2: 
+			j = 2 * k - 1;
+			break;
+		case 3: 
+			j = 3 * k - 1;
+			break; 
+		case 4: 
+			j = 4 * k - 1;
+			break; 
+		case 5: 
+			j = 3 * k - 1;
+			break; 
+		case 6: 
+			j = k - 2;
+			break; 
+		case 7: 
+			j = k - 2;
+			break; 
+		case 8: 
+			j = k - 2;
+			break;   
+		default: 
+			k = -1;
+    }
+    cout<<" j "<< j;
+    cout<<" k "<< k;
+}
+
+// codigo em python
+k = input('Entre com o valor de k: ')
+
+if k= 1: 
+  j = 2 * k - 1
+elif k = 2: 
+  j = 2 * k - 1
+elif k = 3: 
+  j = 3 * k - 1
+elif k = 4: 
+  j = 4 * k - 1 
+elif k = 5: 
+  j = 3 * k - 1
+elif k = 6: 
+  j = k – 2
+elif k = 7: 
+  j = k – 2
+elif k = 8: 
+  j = k – 2
+
+print "j",j
+print "k",k
+
+//codigo em Ruby
+
+k = gets
+ case 
+   when k = 1 then j = 2 * k - 1
+   when k = 2 then j = 2 * k - 1
+   when k = 3 then j = 3 * k - 1
+   when k = 4 then j = 4 * k - 1
+   when k = 5 then j = 3 * k - 1
+   when k = 6 then j = k – 2
+   when k = 7 then j = k – 2
+   when k = 8 then j = k – 2
+ end 
+
+printf " j ", j
+printf " k ", k
