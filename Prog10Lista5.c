@@ -13,6 +13,7 @@ int main(){
 	printf("Com a chamada a função pela esquerda, ");
 	printf("b = %d\n", b);
 	
+	
 	//resultados:
 	//Com a chamada a função pela direita, b = 11
 	//Com a chamada a função pela esquerda, b = 11
