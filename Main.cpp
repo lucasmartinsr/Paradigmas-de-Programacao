@@ -1,3 +1,5 @@
+Exercício 6 - Lista 9
+
 #include <iostream>
 #include "Imc.h"
 #include <time.h>
