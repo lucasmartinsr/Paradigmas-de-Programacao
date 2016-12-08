@@ -1,0 +1,51 @@
+mulher('Maria').
+mulher('Ana').
+homem('Marcos').
+homem('Fabiano').
+homem('Silvio').
+
+bonita_bonito('Maria').
+bonita_bonito('Marcos').
+
+rica_rico('Ana').
+rica_rico('Marcos').
+
+forte('Ana').
+forte('Silvio').
+
+amavel('Silvio').
+
+eAna(X) :-
+    (X == 'Ana'
+    ->  true
+    ; false).
+eMaria(X) :-
+    (X == 'Maria'
+    ->  true
+    ; false).
+
+gosta(X,Y) :-
+	(homem(X),
+	mulher(Y),
+	bonita_bonito(Y));
+	(mulher(X),
+	eAna(X),
+	gosta(Y,X));
+	(mulher(X),
+	eMaria(X),
+	forte(Y),
+	(bonita_bonito(Y);
+	 amavel(Y)),
+	 rica_rico(Y)).
+	
+feliz(X):-
+	(homem(X),
+	rica_rico(X));
+	(homem(X),
+	 mulher(Y),
+	 gosta(X,Y),
+	 gosta(Y,X));
+	 (mulher(X),
+	  homem(Y),
+	  gosta(X,Y),
+	  gosta(Y,X)).
