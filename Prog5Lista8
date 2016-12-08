@@ -1,0 +1,107 @@
+filme('Amnésia').
+filme('Babel').
+filme('Capote').
+filme('Casablanca').
+filme('Matrix').
+filme('Rebecca').
+filme('Shrek').
+filme('Sinais').
+filme('Spartacus').
+filme('Superman').
+filme('Titanic').
+filme('Tubarão').
+filme('Volver').
+
+genero('Suspense').
+genero('Drama').
+genero('Romance').
+genero('Ficção').
+genero('Aventura').
+genero('Ação').
+genero('Aventura').
+
+genero_filme('Amnésia','Suspense').
+genero_filme('Babel','Drama').
+genero_filme('Capote','Drama').
+genero_filme('Casablanca','Romance').
+genero_filme('Matrix','Ficção').
+genero_filme('Rebecca','Suspense').
+genero_filme('Shrek','Aventura').
+genero_filme('Sinais','Ficção').
+genero_filme('Spartacus','Ação').
+genero_filme('Superman','Aventura').
+genero_filme('Titanic','Romance').
+genero_filme('Tubarão','Suspense').
+genero_filme('Volver','Drama').
+
+diretor_filme('Amnésia','Nolan').
+diretor_filme('Babel','Inarrítu').
+diretor_filme('Capote','Miller').
+diretor_filme('Casablanca','Curtiz').
+diretor_filme('Matrix','Wachowsk').
+diretor_filme('Rebecca','Hitchcock').
+diretor_filme('Shrek','Adamson').
+diretor_filme('Sinais','Shymalan').
+diretor_filme('Spartacus','Kubrik').
+diretor_filme('Superman','Donner').
+diretor_filme('Titanic', 'Cameron').
+diretor_filme('Tubarão', 'Spielberg').
+diretor_filme('Volver', 'Almodóvar').
+
+ano_filme('Amnésia',2000).
+ano_filme('Babel',2006).
+ano_filme('Capote',2005).
+ano_filme('Casablanca',1942).
+ano_filme('Matrix',1999).
+ano_filme('Rebecca',1940).
+ano_filme('Shrek',2001).
+ano_filme('Sinais',2002).
+ano_filme('Spartacus',1960).
+ano_filme('Superman',1978).
+ano_filme('Titanic',1997).
+ano_filme('Tubarão',1975).
+ano_filme('Volver',2006).
+
+tempo_filme('Amnésia',113).
+tempo_filme('Babel',142).
+tempo_filme('Capote',98).
+tempo_filme('Casablanca',102).
+tempo_filme('Matrix',136).
+tempo_filme('Rebecca',130).
+tempo_filme('Shrek',90).
+tempo_filme('Sinais',106).
+tempo_filme('Spartacus',184).
+tempo_filme('Superman',143).
+tempo_filme('Titanic',194).
+tempo_filme('Tubarão',124).
+tempo_filme('Volver',121).
+
+diretor(X,Y) :-
+    filme(X),
+	diretor_filme(X,Y).
+
+genero(X,Y) :-
+    filme(X),
+    genero(Y),
+	genero_filme(X,Y).
+
+filme_ducacao_menor(X, Y) :-
+    tempo_filme(X,Z),
+    filme(X),
+    Z < Y.
+
+filme_lancado_entre(X, Y, Z) :-
+    ano_filme(X,K),
+    filme(X),
+    K > Y,
+    K < Z.
+classico(X) :-
+    ano_filme(X,K),
+    filme(X),
+    K < 1980.
+
+classico_suspense(X) :-
+    filme(X),
+    classico(X),
+    genero(X,'Suspense').
+    
