@@ -1,0 +1,36 @@
+//Exercício 9 Lista 7 
+
+//Passagem de parâmetros por valor – Linguagem C++
+
+#include<stdio.h>
+void trocar(int a, int b){
+        int temp;
+        temp=a;
+        a=b;
+        b=temp;
+}
+int main(){
+        int a=2,b=3;
+        cout<<"Valor antes de chamar a função :\n"<<"a= "<<a<<"\n b= "<<b<<endl;
+        troca(a,b);
+        cout<<"Valor depois de chamar a função:\n"<<"a= "<<a<<"\n b= "<<b<<endl;
+        return 0;
+}
+
+
+//Passagem de parâmetros por referência – Linguagem C++
+
+#include<stdio.h>
+void trocar(int *a, int *b){
+        int temp;
+        temp=*a;
+        *a=*b;
+        *b=temp;
+}
+int main(){
+        int a=2,b=3;
+        cout<<"Valor antes de chamar a função :\n"<<"a= "<<a<<"\n b= "<<b<<endl;
+        troca(&a,&b);
+        cout<<"Valor depois de chamar a função:\n"<<"a= "<<a<<"\n b= "<<b<<endl;
+        return 0;
+}
