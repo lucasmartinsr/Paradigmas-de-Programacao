@@ -1,0 +1,80 @@
+//Exercício 11 - Lista 4
+
+//Cadeia de caracteres em C
+
+#include <iostream>
+
+using namespace std;
+
+#include <stdio.h>
+
+void main(){
+ char Cadeia[20+1];
+
+ Cadeia[0]= 'B';
+
+ Cadeia[1]= 'o';
+
+ Cadeia[2]= 'n';
+
+ Cadeia[3]= 'j';
+
+ Cadeia[4]= 'o';
+
+ Cadeia[5]= 'u';
+
+ Cadeia[6]= 'r';
+
+ Cadeia[7]= '\0';
+
+}
+
+//Cadeia de Cracteres em Python
+
+s = raw_input()
+if s.isdigit()==True:
+i = int(s)
+print 'valor = ',i
+else:
+a = s.split('.')
+if len(a)==2:
+i = float(s)
+print 'valor = ',i
+else:
+print 'erro na conversão'
+
+// Cadeia de Caracteres em Java
+
+public class CadeiaDeCaracteres {
+
+  public static void main(String[] args) {
+    int i;
+// o especificador de formato para caractere (%c)
+// mostra o i-ésimo caractere da tabela ASCII
+    System.out.printf("Caracteres numéricos:\n");
+    for (i=48; i<=57; i++) {
+      System.out.printf("%c", i);
+    }
+
+    System.out.printf("\n\nCaracteres alfabéticos maiúsculos:\n");
+    for (i=65; i<=90; i++) {
+      System.out.printf("%c", i);
+    }
+
+    System.out.printf("\n\nCaracteres alfabéticos minúsculos:\n");
+    for (i=97; i<=122; i++) {
+      System.out.printf("%c", i);
+    }
+    System.out.printf("\n");
+  }
+
+}
+
+// Cadeia de caracteres em JavaScript
+
+var cadeia1 = "Bom dia";  
+var cadeia2 = " todo mundo";  
+var cadeia3 = cadeia1.concat(cadeia2);
+
+
+ 
