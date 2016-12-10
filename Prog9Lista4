@@ -1,0 +1,47 @@
+//Exercício 9 - Lista 4
+
+#include <iostream>
+ 
+
+struct S
+{
+    enum{CHAR, INT, DOUBLE};
+    union
+    {
+        char c;
+        int i;
+        double d;
+    };
+};
+ 
+void print_s(const S& s)
+{
+    switch(s.tag)
+    {
+        case S::CHAR: std::cout << s.c << '\n'; break;
+        case S::INT: std::cout << s.i << '\n'; break;
+        case S::DOUBLE: std::cout << s.d << '\n'; break;
+    }
+}
+
+float* transposta (int m, int n, float* mat);
+{ 
+int i, j;
+float* trp;
+trp = (float*) malloc (n*m*sizeof (float));
+for (i=0; i<m; i++)
+for (j=0; j<n; j++)
+trp[j*m+i] = mat [i*n+j];
+return trp;
+}
+ 
+int main()
+{
+    float matrizeEstatica[4][3]; 
+    S s = {S::CHAR, 'a'};
+    print_s(s);
+    s.tag = S::INT;
+    s.i = 123;
+    print_s(s);
+}
+
